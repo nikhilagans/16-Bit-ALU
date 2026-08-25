@@ -70,7 +70,6 @@ The testbench verifies the expected output for each ALU operation.
 
 ![ALU Testbench Output](image/alu-testbench-output.png)
 ## Improvements
-- Zero flag
 - Carry flag
 - Overflow detection
 - Parameterized ALU width
