@@ -1,28 +1,31 @@
-# 8-Bit-ALU
+# 16-Bit-ALU
 
 ## Overview
-This project implements an 8-bit combinational Arithmetic Logic Unit (ALU) in SystemVerilog. The ALU performs arithmetic, logical, and shift operations selected through a 3-bit opcode. A dedicated testbench was created to verify all supported operations through simulation.
+This project implements a 16-bit Arithmetic Logic Unit (ALU) in SystemVerilog as part of a larger custom CPU design.
+
+The ALU performs arithmetic, logical, and shift operations based on a 4-bit control signal. It also generates Negative, Zero, and Positive (NZP) condition codes from the result, which are used by the CPU's branch logic for conditional branching.
 
 ---
 
 ## Features
-- 8-Bit Datapath
-- Combinational RTL ('always_comb')
-- 3-Bit opcode control
-- Eight ALU operations
-- Simulation Testbench
+- 16-bit datapath
+- Combinational RTL (`always_comb`)
+- 4-bit ALU control
+- Eight arithmetic, logical, and shift operations
+- NZP (Negative, Zero, Positive) condition-code generation
+- SystemVerilog simulation testbench
 
 ---
 
 ## Supported Operations
- - 000 -> NOT A
- - 001 -> AND
- - 010 -> ADD
- - 011 -> SUBTRACT
- - 100 -> OR
- - 101 -> XOR
- - 110 -> SHIFT LEFT (A)
- - 111 -> SHIFT RIGHT (A)
+ - '0000' -> NOT A
+ - '0001' -> AND
+ - '0010' -> ADD
+ - '0011' -> SUBTRACT
+ - '0100' -> OR
+ - '0101' -> XOR
+ - '0110' -> SHIFT LEFT (A)
+ - '0111' -> SHIFT RIGHT (A)
 
 ---
 
