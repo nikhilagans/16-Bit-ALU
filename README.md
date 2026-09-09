@@ -39,19 +39,11 @@ tb/
 
 ---
 
-## Example Simulation 
+## Simulation 
 
-Example:
+The 16-bit ALU was verified using a SystemVerilog testbench that tested all eight supported arithmetic, logical, and shift operations. Each test applied known input values and checked the resulting ALU output and NZP condition codes. Additional subtraction cases were included to verify positive (`001`), zero (`010`), and negative (`100`) condition-code generation.
 
-A: 5
-
-B: 4
-
-ADD: 9 
-
-SUBTRACT: 1 
-
-SHIFT LEFT: 10
+The waveform below shows the ALU inputs, control signal, result, and NZP outputs throughout the simulation.
 
 ---
 
